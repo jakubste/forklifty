@@ -7,6 +7,9 @@ log-*
 ~$*.ppt*
 *.xlk
 
+# Vim temporary
+*.swp
+
 # Windows image file caches
 Thumbs.db
 Thumbs.db.meta
@@ -60,3 +63,5 @@ log-*
 /.vs
 CryptographicExceptions/
 
+# Idea Rider specific
+.idea/*
