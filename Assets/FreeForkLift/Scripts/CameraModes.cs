@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraModes : MonoBehaviour {
     public Camera FirstPersonCamera;
@@ -29,7 +28,6 @@ public class CameraModes : MonoBehaviour {
     private void ToggleCameraModeOnInput() {
         if (Input.GetKey(KeyCode.C) && Time.time - _lastChange > MIN_TIME_BETWEEN_CHANGE) {
             _lastChange = Time.time;
-            Debug.Log("Input!");
             switch (_activeCameraMode) {
                 case CameraMode.FirstPerson:
                     _activeCameraMode = CameraMode.ThirdPerson;
